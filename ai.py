@@ -182,9 +182,8 @@ def main() -> None:
     parser.add_argument(
         "-r",
         "--run",
-        action="store_true",
-        default=True,
-        help="Run the output directly (default true)",
+        action="store_false",
+        help="whether to run the output directly (default true; include this flag to prompt before running)",
     )
     args = parser.parse_args()
 
